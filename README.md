@@ -1,5 +1,4 @@
-# EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
-
+### EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
 ### Aim:
 To generate a PWM wave at the timer pin output and  simuate it on  proteus using an virtual oscilloscope  
 
@@ -96,39 +95,67 @@ Step14. click on debug and simulate using simulation as shown below
   
 
 ## STM 32 CUBE PROGRAM :
+```
+Developed By: Iyalarasu C
+Registration No: 212223040069
+```
 
+```
+HAL_TIM_Base_Start(&htim2);
+HAL_TIM_PWM_Init(&htim2);
+HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 
 
 
 
 ## Output screen shots of proteus  :
  
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+![OUTPUT](https://github.com/rasika1206/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/124434806/f39fd0bb-baa2-4348-8aaf-ffe9d133dfbb)
 
-## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+## Circuit diagram:
 
-TON = 
-TOFF=
-TOTAL TIME = 
+![png](https://github.com/rasika1206/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/124434806/895b6749-d873-43cd-a459-a4fec5f96153)
+
+
+
+## DUTY CYCLE AND FREQUENCY CALCULATION :
+## FOR PULSE AT 500
+![500](https://github.com/rasika1206/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/124434806/53512d26-c267-4143-a796-58a3210c9a2b)
+
+```
+TON = 2ms
+TOFF= 2ms
+TOTAL TIME = 4 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(410^-3)
+= 250H
+```
 
-FOR PULSE AT 700
+## FOR PULSE AT 700
+![700](https://github.com/rasika1206/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/124434806/82a53752-1911-44ad-a250-a015e3c5f422)
 
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+TON =  2.17ms
+TOFF= 0.93ms
+TOTAL TIME = 3.1 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.110^-3)
+= 322.58Hz
+```
 
 
-FOR PULSE AT 900
+## FOR PULSE AT 900
 
-TON = 
-TOFF=
-TOTAL TIME = 
+![900](https://github.com/rasika1206/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/124434806/0179e39f-a303-4f32-8094-7f614025263b)
+```
+TON = 2.88ms
+TOFF= 0.32ms
+TOTAL TIME = 3.2 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.210^-30
+= 312.5Hz
+```
 
 
 ## Result :
